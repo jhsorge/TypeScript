@@ -6,8 +6,9 @@ function subtract (n1:number, n2:number) {
     return n2-n1;
 }
 
-const number1 = 20;
+const number1 = 21;
 const number2 = 2.8;
+const number3 = 100;
 
 const result = add(subtract (number2, number1), number2);
 console.log(result);
