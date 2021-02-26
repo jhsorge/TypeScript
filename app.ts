@@ -11,8 +11,16 @@ function accumulate(n1:number) {
         return 0;
     }
     else {
-        return n1 + accumulate(n1-1)
+        return n1 + accumulate(n1-1);
     }
+}
+
+function printAccumulate() {
+    var n1 = Number((<HTMLInputElement> document.getElementById("inputText")).value);
+    console.log(`I have done some amazing maths! This is the result ${accumulate(n1)}`);
+
+    var res = accumulate(n1);
+    document.getElementById("result").innerHTML=res;
 }
 
 const number1 = 21;
